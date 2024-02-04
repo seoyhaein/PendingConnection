@@ -1,0 +1,87 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="800"
+        xmlns:local="clr-namespace:PendingConnection"
+        x:Class="PendingConnection.MainWindow"
+        Title="PendingConnection">
+    <Canvas>
+        <local:TemplateLayoutCanvas x:Name="TemplateCanvas" Background="Chocolate">
+            <!--
+            <local:LocatableControl Location="50,50" Background="Blue" />
+            <local:LocatableControl Location="100,100" Background="Red" />
+            -->
+            <local:MyRect Fill="Chartreuse" Location="50,50" Width="20" Height="50" />
+        </local:TemplateLayoutCanvas>
+        
+        <Button Content="Size"  Width="70" Height="30" Click="Size_OnClick" />
+        
+        <!--<local:LocatableControl Location="50,50" Width="50" Height="50" Background="Blue" />-->
+        
+        
+    </Canvas>
+    <!--
+    <Canvas x:Name="MyCanvas">
+       -->
+        
+        <!--<Button Content="Test" Canvas.Left="20" Canvas.Top="20" Width="50" Height="30" Click="Button_OnClick" />
+        <Button Content="Change" Canvas.Left="80" Canvas.Top="20" Width="70" Height="30" Click="Change_OnClick" />
+        <Button Content="VisibleTest" Canvas.Left="160" Canvas.Top="20" Width="70" Height="30" Click="Visible_OnClick" />-->
+        
+        <!--
+        <local:Connection Source="100,100" Target="200,100"
+                          Stroke="Black"
+                          StrokeThickness="5"
+                          Direction="Forward"
+                          Spacing="0"
+                          ArrowSize="0 0" />
+        -->
+        <!--
+        <local:Connection Source="100,200" Target="200,200"
+                          SourceOffset="1,1"
+                          OffsetMode="Circle"
+                          LineShapeMode="Line"
+                          Stroke="Red"
+                          StrokeThickness="5"
+                          Direction="Forward"
+                          Spacing="0"
+                          ArrowSize="0 0" />
+                          -->
+        <!--
+        <local:Connection Source="100,300" Target="200,400"
+                          OffsetMode="Edge"
+                          LineShapeMode="Circuit"
+                          Stroke="blue"
+                          StrokeThickness="5"
+                          Direction="Forward"
+                          ArrowEnds="Start"/>
+        -->
+        <!--<Grid>
+        <local:PendingConnection SourceAnchor="20,20" TargetAnchor="100,100" />
+        </Grid>-->
+        <!--
+        <local:Connection Source="100,400" Target="200,400"
+                          SourceOffset="10,10"
+                          TargetOffset="10,10"
+                          OffsetMode="Edge"
+                          Stroke="blue"
+                          StrokeThickness="5"
+                          Direction="Forward"
+                          Spacing="0"
+                          ArrowSize="0 0" />
+        
+        <local:Connection Source="100,500" Target="200,500"
+                          SourceOffset="10,10"
+                          TargetOffset="10,10"
+                          OffsetMode="Rectangle"
+                          Stroke="blue"
+                          StrokeThickness="5"
+                          Direction="Forward"
+                          Spacing="0"
+                          ArrowSize="0 0" />
+                          -->
+    <!--
+    </Canvas>
+    -->
+</Window>
